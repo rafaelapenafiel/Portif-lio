@@ -59,8 +59,32 @@ section::after {
     clear: both;
 }
 @media (max-width: 600px) {
-    nav, article {
+    nav {
       width: 100%;
       height: auto;
     }
+    article {
+        margin-left: 0px;
+        width: 90%;
+    }
+  }
+  @media (min-width: 768px) {
+    nav {
+        width: 40%;
+        height: 800px;
+      }
+      article {
+          margin-left: 10px;
+          width: 50%;
+      }
+  }
+  @media (min-width: 992px) {
+    nav {
+        width: 25%;
+        height: 600px;
+      }
+      article {
+          margin-left: 30px;
+          width: 70%;
+      }
   }
